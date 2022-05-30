@@ -27,6 +27,7 @@ if __name__ == '__main__':
     """""""""
     Список товаров:
     """""""""
+
     a = int(input('Введите номер категории: '))
     lines1 = []
     if a == 1:
@@ -50,7 +51,12 @@ if __name__ == '__main__':
     if a == 5:
         with open(r"spisok.txt", "r", encoding='utf-8') as f:
             print("".join(f.readlines()[56:66]))
+    if a > 5:
+        print('Выбранной категории не существует')
+    exit(0)
 
+
+if __name__ == '__main__':
     with open(r"spisok.txt", "r", encoding='utf-8') as f:
         if input('Ведите наименование товара: ') in f.read():
             print("Товар добавлен в карзину")
