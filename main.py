@@ -2,6 +2,8 @@ from users import User
 from Item import Item
 from category import Category
 
+basket = []
+
 if __name__ == '__main__':
     user = User(login='Kukushka', password='12345')
     password_valid = False
@@ -54,9 +56,31 @@ if __name__ == '__main__':
     if a > 5:
         print('Выбранной категории не существует'), exit()
 
+    interview = {}
+    active = True
+    while active:
+        with open(r"spisok.txt", "r", encoding='utf-8') as f:
+            good = input('Ведите наименование товара: ')
+            if good in f.read():
+                print("Товар добавлен в карзину")
+                basket.append(good)
+                print(basket)
+            else: print('Данного товара нет в продаже')
+            repeat = str(input("Желаете продолжить покупки? (y/n): "))
+            if repeat not in 'y' and repeat not in 'n':
+                continue
+            if repeat in 'y':
+                continue
+            elif repeat in 'n':
+                print('Покупка завершена')
+                break
 
-    with open(r"spisok.txt", "r", encoding='utf-8') as f:
-        if input('Ведите наименование товара: ') in f.read():
-            print("Товар добавлен в карзину")
-        else: print('Данного товара нет в продаже'), exit()
+
+
+
+
+
+
+
+
 
