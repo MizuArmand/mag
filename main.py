@@ -58,5 +58,5 @@ if __name__ == '__main__':
     with open(r"spisok.txt", "r", encoding='utf-8') as f:
         if input('Ведите наименование товара: ') in f.read():
             print("Товар добавлен в карзину")
-        else: print('Данного товара нет в продаже')
+        else: print('Данного товара нет в продаже'), exit()
 

@@ -7,7 +7,7 @@ class Category:
     """""
             Функция выбора категории товара
     """""
-
+    @staticmethod
     def checCategory():
         category_list = {1: 'Фрукты',
                          2: 'Овощи',
