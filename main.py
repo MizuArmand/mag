@@ -52,7 +52,7 @@ if __name__ == '__main__':
         with open(r"spisok.txt", "r", encoding='utf-8') as f:
             print("".join(f.readlines()[56:66]))
     if a > 5:
-        print('Выбранной категории не существует')
+        print('Выбранной категории не существует'), exit()
 
 
 if __name__ == '__main__':
