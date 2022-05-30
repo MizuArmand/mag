@@ -72,7 +72,7 @@ if __name__ == '__main__':
             if repeat in 'y':
                 continue
             elif repeat in 'n':
-                print('Покупка завершена')
+                print('Покупка завершена, Купленные товары: ', basket)
                 break
 
 
