@@ -55,7 +55,6 @@ if __name__ == '__main__':
         print('Выбранной категории не существует')
 
 
-
 if __name__ == '__main__':
     with open(r"spisok.txt", "r", encoding='utf-8') as f:
         if input('Ведите наименование товара: ') in f.read():
