@@ -1,7 +1,7 @@
 class Item(object):
     name = ''
-    price = int
-    rating = int
+    price: int
+    rating: int
 
     def __init__(self, name, price, rating):
         self.name = name

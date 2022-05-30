@@ -4,9 +4,9 @@ class Category:
         self.num = num
         self.name = name
 
-    """""
-            Функция выбора категории товара
-    """""
+    """
+    Функция выбора категории товара
+    """
     @staticmethod
     def checCategory():
         category_list = {1: 'Фрукты',
