@@ -53,7 +53,7 @@ if __name__ == '__main__':
             print("".join(f.readlines()[56:66]))
     if a > 5:
         print('Выбранной категории не существует')
-    exit(0)
+
 
 
 if __name__ == '__main__':
